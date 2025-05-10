@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #5c6bc0;
+  --secondary-color: #7986cb;
+  --background-color: #f5f7fa;
+  --text-color: #37474f;
+  --light-gray: #eceff1;
+  --white: #ffffff;
+  --success: #66bb6a;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.card {
+  border: none;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid var(--light-gray);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+.custom-btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.custom-btn:hover,
+.custom-btn:focus, .custom-btn:active {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table td {
+  text-align: left;
+}
+
+.error {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
