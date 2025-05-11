@@ -1,15 +1,11 @@
 # Frontend
 
-Esta aplicacion es la capa frontend de la prueba tecnica.
+Esta aplicacion es la capa frontend de la prueba tecnica, se conecta con la [API SGA](https://github.com/andres0615/prueba-ga-api-sga).
 
 ## Características
 
 * **Estilos con Bootstrap 5**: Diseño responsivo.
 * **Interactividad con JavaScript y jQuery**: Validaciones y peticiones AJAX.
-
-## Requisitos previos
-
-* Conexión a la [API SGA](https://github.com/andres0615/prueba-ga-api-sga).
 
 ## Instalación
 
