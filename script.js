@@ -1,6 +1,10 @@
 $(document).ready(() => {
     const apiUrl = "http://prueba-ga-api-sga.test:8083";
 
+    $.validator.addMethod('placa', function(value, element) {
+        return this.optional(element) || /^[A-Z]{3}\d{3}$/.test(value);
+    }, 'Formato inválido. Debe ser 3 letras mayúsculas y 3 números, e.j. ABC123');
+
   // Configuración de jQuery Validation
   $("#quoteForm").on("submit", function(e) {
     e.preventDefault();
@@ -17,7 +21,8 @@ $(document).ready(() => {
       },
       placa: {
         required: true,
-        maxlength: 6
+        maxlength: 6,
+        placa: true,
       },
     },
     messages: {
@@ -33,6 +38,7 @@ $(document).ready(() => {
       placa: {
         required: "Por favor ingrese la placa de su automóvil",
         maxlength: "La placa no puede exceder los 6 caracteres",
+        placa: 'Debe tener 3 letras mayúsculas seguidas de 3 dígitos (e.j. ABC123)'
       },
     },
     errorElement: "div",
