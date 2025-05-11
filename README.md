@@ -9,7 +9,7 @@ Esta aplicacion es la capa frontend de la prueba tecnica.
 
 ## Requisitos previos
 
-* Conexión a la **API SGA**.
+* Conexión a la [API SGA](https://github.com/andres0615/prueba-ga-api-sga).
 
 ## Instalación
 
