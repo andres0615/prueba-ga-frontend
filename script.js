@@ -72,6 +72,8 @@ $(document).ready(() => {
         // Ocultar formulario y mostrar resultados
         $("#quoteForm").hide();
         $("#resultSection").fadeIn();
+    } else {
+        $("#form-alert").css("display", "block").focus();
     }
     
   }
@@ -91,11 +93,15 @@ $(document).ready(() => {
       async: false, // Ensure the request completes before returning
       success: (response) => {
         cotizaciones = response.cotizaciones; // Assuming the response contains a 'cotizaciones' array
-        success = true;
+        // success = true;
+        if(typeof cotizaciones !== "undefined"){
+            if (cotizaciones.length > 0) {
+                success = true;
+            }
+        }
       },
       error: (xhr, status, error) => {
         console.error("Error obteniendo las cotizaciones:", error);
-        alert("Hubo un error al obtener las cotizaciones. Por favor, inténtelo de nuevo.");
       },
     });
 
