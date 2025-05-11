@@ -1,6 +1,6 @@
 # Frontend
 
-Este proyecto es una aplicación frontend que utiliza **Bootstrap 5** para los estilos y emplea **JavaScript** y **jQuery** para la interacción y manipulación del DOM.
+Esta aplicacion es la capa frontend de la prueba tecnica.
 
 ## Características
 
